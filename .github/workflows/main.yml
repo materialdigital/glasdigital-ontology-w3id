@@ -1,0 +1,14 @@
+name: RewriteTests
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Test if htaccess files in current directory does multiple wanted redirects
+      uses: madewithlove/htaccess-cli-github-action@multiple
+      with:
+        url-list: rewrite-tests.yml
