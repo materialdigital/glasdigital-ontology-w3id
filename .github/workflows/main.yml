@@ -12,4 +12,4 @@ jobs:
       uses: madewithlove/htaccess-cli-github-action@multiple
       with:
         url-list: ./pmd/tests/rewrite-tests.yml
-        working-directory: ./pmd
+        path: ./pmd/
