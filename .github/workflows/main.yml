@@ -11,4 +11,4 @@ jobs:
     - name: Test if htaccess files in current directory does multiple wanted redirects
       uses: madewithlove/htaccess-cli-github-action@multiple
       with:
-        url-list: rewrite-tests.yml
+        url-list: ./pmd/tests/rewrite-tests.yml
